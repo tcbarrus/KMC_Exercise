@@ -12,7 +12,7 @@
 			$obj->{$key} = $value;
 		}
 
-		$encode = serialize($obj);
+		$encode = print_r($obj, true);
 		
 		$file = "object.txt";
 		$fh = fopen($file, "w");
